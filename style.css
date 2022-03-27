@@ -101,6 +101,40 @@ footer-link::after {
   width: 100%;
 }
 
+.toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 15;
+}
+
+.toggle div {
+  width: 80%;
+  height: 2px;
+  background: var(--color-background);
+  margin: 3px 0;
+  z-index: 15;
+}
+
+.toggle.collapsed .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.collapsed .line2 {
+  opacity: 0;
+}
+
+.toggle.collapsed .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .main {
   border: 1px solid var(--color-background);
 }
@@ -375,5 +409,36 @@ footer-link::after {
   .main-title::after {
     left: 26%;
     height: 1px;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .nav.collapsed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 525px;
+    flex-direction: column;
+    background-color: var(--color-accent);
+  }
+
+  .nav-list.collapsed {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .nav {
+    display: none;
   }
 }
