@@ -21,3 +21,14 @@ I started studying front-end development last year in my free time. And it reall
 - Git
 - Markdown
 - Figma
+
+### Code Example
+
+```
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+alert( result );
+```
