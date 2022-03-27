@@ -39,3 +39,8 @@ alert( result );
 - **IT school TeachMeSkills**: [Front End Developer](https://teachmeskills.by/kursy-programmirovaniya/frontend-html-css-javascript-minsk)
 
   My projects created during studing are on GitHub repository.
+
+### Languages
+
+- Russian (native)
+- English A2
