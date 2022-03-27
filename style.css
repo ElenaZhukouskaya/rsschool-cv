@@ -37,6 +37,11 @@ a {
   background-color: var(--color-background);
 }
 
+.section {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .header,
 .footer {
   background-color: var(--color-primary);
@@ -83,10 +88,11 @@ a {
   transition: 0.5s all ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.contacts-link:hover,
+.education-link:hover {
   color: var(--color-accent);
   text-decoration: underline;
-  transform: scale(1.2, 1.2);
   transition: all 0.5s ease;
 }
 
@@ -164,4 +170,80 @@ a {
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  width: 30%;
+  padding: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.section-title {
+  margin-bottom: 15px;
+  background-color: var(--color-accent);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: var(--color-text);
+}
+
+.section-list {
+  padding: 10px 20px;
+}
+
+.contacts-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.contacts-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--color-background);
+  filter: invert(87%) sepia(42%) saturate(259%) hue-rotate(339deg)
+    brightness(96%) contrast(88%);
+}
+
+.contacts-item:nth-child(1):before {
+  background-image: url(./assets/icons/map-marker.svg);
+}
+
+.contacts-item:nth-child(2):before {
+  background-image: url(./assets/icons/discord.svg);
+}
+
+.contacts-item:nth-child(3):before {
+  background-image: url(./assets/icons/email.svg);
+}
+
+.contacts-item:nth-child(4):before {
+  background-image: url(./assets/icons/github.svg);
+}
+
+.contacts-link,
+.education-link {
+  color: var(--color-background);
+}
+
+.education-item {
+  margin-bottom: 10px;
 }
