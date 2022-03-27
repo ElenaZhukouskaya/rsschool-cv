@@ -312,3 +312,68 @@ footer-link::after {
   transform: scale(1.2);
   transition: 0.5s ease-in-out;
 }
+
+@media (max-width: 1024px) {
+  .left-side {
+    width: 40%;
+  }
+
+  .right-side {
+    width: 60%;
+  }
+
+  .photo-container {
+    width: 40%;
+  }
+
+  .profile-title {
+    width: 60%;
+  }
+
+  .main-title::after {
+    left: 15%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .photo {
+    border-radius: 50%;
+    border: none;
+  }
+
+  .photo-container {
+    background-color: var(--color-background);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .left-side {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+
+  .contacts-link,
+  .education-link {
+    color: var(--color-text);
+  }
+
+  .main-title::after {
+    left: 26%;
+    height: 1px;
+  }
+}
