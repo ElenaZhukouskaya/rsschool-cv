@@ -32,3 +32,10 @@ function sum(a, b) {
 let result = sum(1, 2);
 alert( result );
 ```
+
+### Education and Experience
+
+- **Belarusian National Technical University**: commercial business.
+- **IT school TeachMeSkills**: [Front End Developer](https://teachmeskills.by/kursy-programmirovaniya/frontend-html-css-javascript-minsk)
+
+  My projects created during studing are on GitHub repository.
